@@ -1,24 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        table,th,td{ 
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-    </style>
-</head>
-<body>
-     <div class="heading2">
-         <h1 class="heading3">day la test heading</h1>
-         <h1 class="heading3">day la test heading</h1>
-     </div> 
+<html>
+    <head>
+        <title>Đăng ký tài khoản mới</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                Header
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="register-form">
+                    <form action="" method="post">
+                        <h1>Đăng ký thông tin </h1>
+                        <div class="input-box">
 
+                            <input type="text" placeholder="Nhập username">
+                        </div>
+                        <div class="input-box">
 
-    <script src="main.js"></script>
-</body>
+                            <input type="password" placeholder="Nhập password">
+                        </div>
+                        <div class="input-box">
+                            <div class="col-6">
+                                <label for="ngaysinh">Ngày sinh</label>
+                                <br>
+                                <input type="date" id="ngaysinh"/>
+                            <div class="col-6">
+                                <label for="gioitinh">Giới tính</label>
+                                <br>
+                                <select id="gioitinh">
+                                    <option value="nam">Nam</option>
+                                    <option value="nu">Nữ</option>
+                                </select>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="input-box">
+                            <span>Sở thích</span>
+                            <br>
+                            <input type="checkbox" id="xemphim"> 
+                            <label for="xemphim">Xem phim</label>
+                            <div class="margin_b"></div>
+                            <input type="checkbox" id="nghenhac"> 
+                            <label for="nghenhac">Nghe nhạc</label>
+                            <div class="margin_b"></div>
+                            <input type="checkbox" id="docsach"> 
+                            <label for="docsach">Đọc sách</label>
+                        </div>
+                        <div class="input-box">
+                            <span>Thời gian có thể dạy</span>
+                            <br>
+                            <input type="checkbox" id="xemphim"> 
+                            <label for="xemphim">Thứ 2 </label>
+                            <input type="time" id="time"/>
+                            <div class="margin_b"></div>
+                            <input type="checkbox" id="nghenhac"> 
+                            <label for="nghenhac">Thứ 3 </label>
+                            <input type="time" id="time"/>
+                            <div class="margin_b"></div>
+                            <input type="checkbox" id="docsach"> 
+                            <label for="docsach">Thứ 4 </label>
+                            <input type="time" id="time"/>
+                            <div class="margin_b"></div>
+                            <input type="checkbox" id="docsach"> 
+                            <label for="docsach">Thứ 5 </label>
+                            <input type="time" id="time"/>
+                            <div class="margin_b"></div>
+                            <input type="checkbox" id="docsach"> 
+                            <label for="docsach">Thứ 6 </label>
+                            <input type="time" id="time"/>
+                            <div class="margin_b"></div>
+                            <input type="checkbox" id="docsach"> 
+                            <label for="docsach">Thứ 7 </label>
+                            <input type="time" id="time"/>
+                            <div class="margin_b"></div>
+                            <input type="checkbox" id="docsach"> 
+                            <label for="docsach">Chủ nhật </label>
+                            <input type="time" id="time"/>
+                        </div>
+                        <div class="input-box">
+                            <label for="gioithieu">Giới thiệu bản thân</label>
+                            <br>
+                            <textarea id="gioithieu"></textarea>
+                        </div>
+                        
+                        <div class="btn-box">
+                            <button type="submit">
+                                Đăng ký
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                Footer
+            </div>
+
+        </footer>
+    </body>
 </html>
